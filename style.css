@@ -1,0 +1,350 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-primary: #077933e5 ;         
+  --color-primary-variant: rgba(255, 38, 0, 0.829);
+  --color-white: #fff;
+  --color-light: #f5f5f5;
+  --color-black: #0f0f1b;
+  --color-dark: #4b4e53;
+  --container-width-lg: 82%;
+  --container-width-md: 90%;
+  --container-width-sm: 92%;
+}
+ 
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+  color: var(--color-dark);
+  line-height: 1.7;
+  background-image: url(./Images/gradients.fdc2f6b1.png);
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5{
+  color: var(--color-black);
+}
+
+h1{
+  font-size: 4.4rem;
+  line-height: 1.1;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 1.4rem;
+}
+
+h5{
+  font-size: 1rem;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.container{
+  width: var(--container-width-lg);
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+section{
+  padding: 6rem 0;
+  margin: 5rem 0;
+}
+
+.btn{
+  color: var(--color-white);
+	font-size: 15px;
+  text-decoration: none;
+	font-weight: 500;
+	padding: 15px 60px;
+	border-radius: 500px;
+	display: inline-block;
+	background: var(--color-primary);
+  cursor: pointer;
+}
+
+.btn-primary{
+  background: var(--color-white);
+  color: var(--color-black);
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 500px;
+  border: solid 1px var(--color-black);
+  padding: 15px 60px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+/* ======== NAVBAR ============ */
+nav{
+  width: 100vw;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+}
+
+.nav_logo{
+  width: 40px;
+  height: 25px;
+  display: flex;
+}
+
+.nav_logo h3 {
+  color: var(--color-primary);
+  /* margin-bottom: 16px; */
+  font-size: 20px;
+}
+nav a {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  transition: all 400ms ease;
+}
+
+nav a:hover{
+  color: var(--color-primary-variant);
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button{
+  display: none;
+}
+
+.nav__left{
+  display: flex;
+  align-items: right;
+  gap: 1rem;
+}
+.nav__right{
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  gap: 3rem;
+}
+
+
+
+/* ================ header =========== */
+header{
+  height: calc(100vh - 5rem);
+  position: relative;
+  top: 8rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  height: 100%;
+}
+
+.header__left{
+  display: flex;
+  align-items: center;
+  /* height: 100%; */
+}
+
+
+.header__left h2{
+  margin-bottom: 0.6rem;
+}
+
+.header__left p{
+  margin-bottom: 1.2rem;
+}
+
+.btn__free{
+  color: var(--color-white);
+	font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+	padding: 15px 20px;
+	border-radius: 500px;
+	display: inline-block;
+	background: var(--color-primary);
+  cursor: pointer;
+}
+
+.payroll{
+  color: var(--color-primary);
+}
+
+.easily{
+  color: gold;
+}
+
+.seconds{
+  color: orangered;
+}
+
+.app{
+  color: black;
+  margin-top: 1.2rem;
+}
+
+.header__image{
+  display: flex;
+  align-items: center;
+}
+
+.header__image img{
+  width: 70%;
+  /* background-color: red; */
+}
+
+/* Payroll cards section */
+#for__individuals{
+  margin-top: 10rem;
+  background-image:  url("./Images/audience-patterns.5d18a20d.png");
+  height: calc(100vh - 5rem);
+  position: relative;
+  top: 5rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.payroll{
+  text-align: center;
+
+}
+
+.for__individuals__container h2{
+  color: var(--color-primary);
+}
+
+.for__individuals__container p{
+  color: var(--color-black);
+}
+
+.payroll__cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--color-primary);
+  /* justify-content: space-between; */
+  /* width: 80%; */
+  /* max-width: 600px; */
+  margin-left: 8rem ;
+  margin-right: 8rem ;
+  margin-bottom: 1rem;
+  border-radius: 30px; 
+}
+
+.payroll_card{
+  color: white;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.payroll_card h4{
+  color: white;
+  width: 110%;
+
+}
+
+.eazipaymail{
+  color: red;
+  cursor: pointer;
+}
+
+
+/* How it works section */
+
+#stepss{
+  height: 100%;
+  position: relative;
+  top: 5rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.how_it_works_container{
+  text-align: center;
+}
+
+.how_it_works_container h2{
+  color: var(--color-primary);
+}
+
+.how_it_works_container h4{
+  color: grey;
+  padding-bottom: 5rem;
+}
+
+.how_it_workss{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  
+}
+
+.how_it_workss img{
+  width: 30%;
+  height: 100%;
+  border-radius: 40px;
+ 
+}
+
+
+.stepsss{
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
